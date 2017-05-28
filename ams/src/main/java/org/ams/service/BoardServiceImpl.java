@@ -11,6 +11,9 @@ import org.ams.persistence.BoardDAO;
 
 @Service
 public class BoardServiceImpl implements BoardService {
+	/*
+	static int result;*/
+	
 
   @Inject
   private BoardDAO dao;
@@ -23,6 +26,11 @@ public class BoardServiceImpl implements BoardService {
   @Override
   public BoardVO read(Integer bno) throws Exception {
     return dao.read(bno);
+  }
+  
+  @Override
+  public List<BoardVO> maxread() throws Exception {
+    return dao.maxread();
   }
 
   @Override
@@ -39,5 +47,7 @@ public class BoardServiceImpl implements BoardService {
   public List<BoardVO> listAll() throws Exception {
     return dao.listAll();
   }
+
+
 
 }

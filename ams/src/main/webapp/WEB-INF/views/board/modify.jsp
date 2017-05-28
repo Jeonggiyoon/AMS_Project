@@ -11,13 +11,43 @@
 			<!-- general form elements -->
 			<div class="box box-primary">
 				<div class="box-header">
-					<h3 class="box-title">READ BOARD</h3>
+					<h3 class="box-title">READ AMS BOARD</h3>
 				</div>
 				<!-- /.box-header -->
 
 <form role="form" method="post">
+<table class="table table-bordered">
+	<tr>
+		<th>
+			<label for="exampleInputEmail1">BNO</label> <input type="text"
+				name='bno' class="form-control" value="${boardVO.bno}"
+				readonly="readonly">
+		</th>
+		<th>
+			<label for="exampleInputEmail1">Lot</label> <input type="text"
+				name='lot' class="form-control" value="${boardVO.lot}" readonly="readonly">
+		</th>
+		<th>
+			<label for="exampleInputEmail1">Cin	</label> <input type="number"
+				name='cin' MIN ="1" class="form-control" value="${boardVO.cin}">
+		</th>
+		<th>
+			<label for="exampleInputEmail1">Cout</label> <input type="number"
+				name='cout' MIN ="1" class="form-control" value="${boardVO.cout}">
+		</th>
+		<th>
+			<label for="exampleInputEmail1">Total</label> <input type="number"
+				name='total' MIN ="1" class="form-control" value="${boardVO.total}" readonly="readonly">
+		</th>
+		<th>
+			<label for="exampleInputEmail1">Writer</label> <input
+				type="text" name="writer" class="form-control"
+				value="${boardVO.writer}">
+		</th>
+	</tr>
+</table>
 
-	<div class="box-body">
+	<%-- <div class="box-body">
 
 		<div class="form-group">
 			<label for="exampleInputEmail1">BNO</label> <input type="text"
@@ -32,17 +62,17 @@
 
 		<div class="form-group">
 			<label for="exampleInputEmail1">Cin	</label> <input type="number"
-				name='cin' class="form-control" value="${boardVO.cin}">
+				name='cin' MIN ="1" class="form-control" value="${boardVO.cin}">
 		</div>
 		
 		<div class="form-group">
 			<label for="exampleInputEmail1">Cout</label> <input type="number"
-				name='cout' class="form-control" value="${boardVO.cout}">
+				name='cout' MIN ="1" class="form-control" value="${boardVO.cout}">
 		</div>
 		
 		<div class="form-group">
 			<label for="exampleInputEmail1">Total</label> <input type="number"
-				name='total' class="form-control" value="${boardVO.total}">
+				name='total' MIN ="1" class="form-control" value="${boardVO.total}">
 		</div>
 		
 		<div class="form-group">
@@ -50,7 +80,7 @@
 				type="text" name="writer" class="form-control"
 				value="${boardVO.writer}">
 		</div>
-	</div>
+	</div> --%>
 	<!-- /.box-body -->
 </form>
 

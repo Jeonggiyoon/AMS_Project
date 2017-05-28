@@ -26,6 +26,11 @@ public class BoardDAOImpl implements BoardDAO {
   public BoardVO read(Integer bno) throws Exception {
     return session.selectOne(namespace + ".read", bno);
   }
+  
+  @Override
+  public List<BoardVO> maxread() throws Exception {
+    return session.selectList(namespace + ".maxread");
+  }
 
   @Override
   public void update(BoardVO vo) throws Exception {
@@ -41,5 +46,6 @@ public class BoardDAOImpl implements BoardDAO {
   public List<BoardVO> listAll() throws Exception {
     return session.selectList(namespace + ".listAll");
   }
+
 
 }

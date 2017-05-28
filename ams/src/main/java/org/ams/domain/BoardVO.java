@@ -4,15 +4,18 @@ import java.util.Date;
 
 
 public class BoardVO {
-	
+
+
 	private Integer bno;
 	private String lot;
 	private int cin;      // carry in
 	private int cout;     // carrying out
-	private int total;
+	private int total;   
 	private String writer;
 	private Date regdate;
 	private int viewcnt;
+	
+/*	static int result ;*/
 
 	public Integer getBno() {
 		return bno;
@@ -45,14 +48,27 @@ public class BoardVO {
 	public void setCout(int cout) {
 		this.cout = cout;
 	}
-
+	
 	public int getTotal() {
+		/*		int temp =0;
+		
+		result = temp + cin;
+		result -= cout;
+		total = result;*/
+		
 		return total;
 	}
 
 	public void setTotal(int total) {
+/*		int temp =0;
+		
+		result = temp + cin;
+		result -= cout;
+		total = result;
+		*/
 		this.total = total;
 	}
+
 
 	public String getWriter() {
 		return writer;

@@ -35,11 +35,13 @@
       
       <header class="main-header">
         <!-- Logo -->
-        <a href="/resources/index2.html" class="logo">
+        <a href="/" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>AMS</b> PROJECT</span>
+          <span class="logo-lg">
+          	<b>AMS</b> PROJECT
+          </span> 
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -53,7 +55,7 @@
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
               <!-- Messages: style can be found in dropdown.less-->
-              <li class="dropdown messages-menu">
+    <!--           <li class="dropdown messages-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-envelope-o"></i>
                   <span class="label label-success">4</span>
@@ -61,9 +63,9 @@
                 <ul class="dropdown-menu">
                   <li class="header">You have 4 messages</li>
                   <li>
-                    <!-- inner menu: contains the actual data -->
+                    inner menu: contains the actual data
                     <ul class="menu">
-                      <li><!-- start message -->
+                      <li>start message
                         <a href="#">
                           <div class="pull-left">
                             <img src="/resources/dist/img/user7-128x128.jpg" class="img-circle" alt="User Image"/>
@@ -74,7 +76,7 @@
                           </h4>
                           <p>Why not buy a new awesome theme?</p>
                         </a>
-                      </li><!-- end message -->
+                      </li>end message
                       <li>
                         <a href="#">
                           <div class="pull-left">
@@ -127,8 +129,8 @@
                   </li>
                   <li class="footer"><a href="#">See All Messages</a></li>
                 </ul>
-              </li>
-              <!-- Notifications: style can be found in dropdown.less -->
+              </li> -->
+ <!--              Notifications: style can be found in dropdown.less
               <li class="dropdown notifications-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-bell-o"></i>
@@ -137,7 +139,7 @@
                 <ul class="dropdown-menu">
                   <li class="header">You have 10 notifications</li>
                   <li>
-                    <!-- inner menu: contains the actual data -->
+                    inner menu: contains the actual data
                     <ul class="menu">
                       <li>
                         <a href="#">
@@ -169,9 +171,9 @@
                   </li>
                   <li class="footer"><a href="#">View all</a></li>
                 </ul>
-              </li>
+              </li> -->
               <!-- Tasks: style can be found in dropdown.less -->
-              <li class="dropdown tasks-menu">
+ <!--              <li class="dropdown tasks-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-flag-o"></i>
                   <span class="label label-danger">9</span>
@@ -179,9 +181,9 @@
                 <ul class="dropdown-menu">
                   <li class="header">You have 9 tasks</li>
                   <li>
-                    <!-- inner menu: contains the actual data -->
+                    inner menu: contains the actual data
                     <ul class="menu">
-                      <li><!-- Task item -->
+                      <li>Task item
                         <a href="#">
                           <h3>
                             Design some buttons
@@ -193,8 +195,8 @@
                             </div>
                           </div>
                         </a>
-                      </li><!-- end task item -->
-                      <li><!-- Task item -->
+                      </li>end task item
+                      <li>Task item
                         <a href="#">
                           <h3>
                             Create a nice theme
@@ -206,8 +208,8 @@
                             </div>
                           </div>
                         </a>
-                      </li><!-- end task item -->
-                      <li><!-- Task item -->
+                      </li>end task item
+                      <li>Task item
                         <a href="#">
                           <h3>
                             Some task I need to do
@@ -219,8 +221,8 @@
                             </div>
                           </div>
                         </a>
-                      </li><!-- end task item -->
-                      <li><!-- Task item -->
+                      </li>end task item
+                      <li>Task item
                         <a href="#">
                           <h3>
                             Make beautiful transitions
@@ -232,26 +234,26 @@
                             </div>
                           </div>
                         </a>
-                      </li><!-- end task item -->
+                      </li>end task item
                     </ul>
                   </li>
                   <li class="footer">
                     <a href="#">View all tasks</a>
                   </li>
                 </ul>
-              </li>
+              </li> -->
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <img src="/resources/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
-                  <span class="hidden-xs">gi_yoon Jeong</span>
+                  <span class="hidden-xs">profile</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
                     <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
-                      gi_yoon Jeong - Web Developer
+                      AMS - Web Developer
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>
@@ -270,11 +272,17 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                      <a href="/user/login" class="btn btn-default btn-flat">로그인</a>
                     </div>
+                    
+                    <!-- <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">로그아웃</a>
+                    </div> -->
+                    
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="#" class="btn btn-default btn-flat">로그아웃</a>
                     </div>
+                    
                   </li>
                 </ul>
               </li>
@@ -316,35 +324,34 @@
             <li class="header">MAIN NAVIGATION</li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-dashboard"></i> <span> 탄약 시스템 소개</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/resources/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                <li><a href="/resources/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                <li><a href="/intro/write"><i class="fa fa-circle-o"></i> 시스템 소개 </a></li>
               </ul>
             </li>
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-files-o"></i>
-                <span>Layout Options</span>
-                <span class="label label-primary pull-right">4</span>
+                <span>탄약 관리</span>
+                <span class="label label-primary pull-right"></span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+                <li><a href="/board/register"><i class="fa fa-circle-o"></i> 탄약 입력 </a></li>
+                <li><a href="/board/listAll"><i class="fa fa-circle-o"></i> 탄약목록 </a></li>
+<!--                 <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+                <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li> -->
               </ul>
             </li>
             <li>
               <a href="../widgets.html">
-                <i class="fa fa-th"></i> <span>Widgets</span> <small class="label pull-right bg-green">new</small>
+                <i class="fa fa-th"></i> <span> 메뉴 추가 가능</span> <small class="label pull-right bg-green"></small>
               </a>
             </li>
-            <li class="treeview">
+          <!--   <li class="treeview">
               <a href="#">
                 <i class="fa fa-pie-chart"></i>
-                <span>Charts</span>
+                <span>메뉴 추가 가능</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
@@ -357,7 +364,7 @@
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-laptop"></i>
-                <span>UI Elements</span>
+                <span>메뉴 추가 가능</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
@@ -371,7 +378,7 @@
             </li>
             <li class="treeview active">
               <a href="#">
-                <i class="fa fa-edit"></i> <span>Forms</span>
+                <i class="fa fa-edit"></i> <span>메뉴 추가 가능</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
@@ -382,7 +389,7 @@
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-table"></i> <span>Tables</span>
+                <i class="fa fa-table"></i> <span>메뉴 추가 가능</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
@@ -392,19 +399,19 @@
             </li>
             <li>
               <a href="../calendar.html">
-                <i class="fa fa-calendar"></i> <span>Calendar</span>
+                <i class="fa fa-calendar"></i> <span>메뉴 추가 가능</span>
                 <small class="label pull-right bg-red">3</small>
               </a>
             </li>
             <li>
               <a href="../mailbox/mailbox.html">
-                <i class="fa fa-envelope"></i> <span>Mailbox</span>
+                <i class="fa fa-envelope"></i> <span>메뉴 추가 가능</span>
                 <small class="label pull-right bg-yellow">12</small>
               </a>
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-folder"></i> <span>Examples</span>
+                <i class="fa fa-folder"></i> <span>메뉴 추가 가능</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
@@ -419,7 +426,7 @@
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-share"></i> <span>Multilevel</span>
+                <i class="fa fa-share"></i> <span>메뉴 추가 가능</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
@@ -440,11 +447,11 @@
                 <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
               </ul>
             </li>
-            <li><a href="/resources/documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+            <li><a href="/resources/documentation/index.html"><i class="fa fa-book"></i> <span>메뉴 추가 가능</span></a></li>
             <li class="header">LABELS</li>
             <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>-->
           </ul>
         </section>
         <!-- /.sidebar -->

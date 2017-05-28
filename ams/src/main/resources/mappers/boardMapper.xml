@@ -11,23 +11,34 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  </insert>
 
  <select id="read" resultType="org.ams.domain.BoardVO">
+ 
  select 
    bno, lot, cin, cout, total, writer, regdate, viewcnt 
  from 
    ams_board 
  where bno = #{bno}
  </select>
+ 
+ <select id="maxread" resultType="org.ams.domain.BoardVO">
+ select 
+   bno, lot, cin, cout, total, writer, regdate, viewcnt 
+ from 
+   ams_board 
+ order by bno desc limit 1
+  <!-- where bno = (select max(bno) from ams_board) -->
+ </select>
 
  <update id="update">
- update ams_board set lot =#{lot}, cin =#{cin}, cin =#{cout}, total =#{total}, writer =#{writer}   
+ update ams_board set cin =#{cin}, cout =#{cout}, writer =#{writer}   
  where bno = #{bno}
  </update>
 
  <delete id="delete">
  delete from ams_board where bno = #{bno}
  </delete>
+ 
 
- <select id="listAll" resultType="org.ams.domain.BoardVO">
+  <select id="listAll" resultType="org.ams.domain.BoardVO">
  <![CDATA[
  select 
    bno, lot, cin, cout, total, writer, regdate, viewcnt 
@@ -36,6 +47,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  where bno > 0 
  order by bno desc, regdate desc
  ]]>  
- </select>
+ </select> 
   
 </mapper>
