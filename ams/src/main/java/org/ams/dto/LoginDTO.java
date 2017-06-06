@@ -6,8 +6,8 @@ public class LoginDTO {
 	private String snum;
 	private String pw;
 	private boolean useCookie;
-	
-	
+
+
 	public String getSnum() {
 		return snum;
 	}
@@ -41,15 +41,19 @@ public class LoginDTO {
 	public void setUseCookie(boolean useCookie) {
 		this.useCookie = useCookie;
 	}
-
-
+	
 	
 	@Override
 	public String toString() {
+		return "LoginDTO [snum=" + snum + ", pw=" + pw + ", useCookie=" + useCookie + "]";
+	}
+
+	
+/*	@Override
+	public String toString() {
 		return "LoginDTO [snum=" + snum + ", pw=" + pw + ", useCookie="
 				+ useCookie + "]";
-	}
-	
+	}*/
 	
 
 }

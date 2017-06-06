@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
+import org.ams.domain.BoardVO;
 import org.ams.domain.UserVO;
 import org.ams.dto.LoginDTO;
 import org.ams.persistence.UserDAO;
@@ -33,5 +34,10 @@ public class UserServiceImpl implements UserService {
   public UserVO checkLoginBefore(String value) {
     
     return dao.checkUserWithSessionKey(value);
+  }
+  
+  @Override
+  public void member(UserVO user) throws Exception {
+    dao.member(user);
   }
 }

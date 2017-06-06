@@ -19,6 +19,26 @@ public class BoardDAOImpl implements BoardDAO {
 
   @Override
   public void create(BoardVO vo) throws Exception {
+/*	  
+	  int result, sum, cin, cout;
+	  
+	  BoardVO vo1 = new BoardVO();
+	  
+	  cin = vo1.getCin();
+	  cout =vo1.getCout();
+	  
+	  sum = cin - cout;
+	  
+	  result = sum;
+	    
+	  result= vo1.getTotal();
+	  */
+	  
+	  
+/*	  value = result + sum;
+	  
+	  result= value;*/
+	  
     session.insert(namespace + ".create", vo);
   }
 

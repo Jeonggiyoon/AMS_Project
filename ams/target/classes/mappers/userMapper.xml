@@ -5,19 +5,22 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="org.ams.mapper.UserMapper">
 
-  <select id="login" resultType="UserVO">
-  
-  select snum, pw, name from ams_user where snum = #{snum} and pw = #{pw}
-  
+  <select id="login" resultType="UserVO">  
+  	select snum, pw, name from ams_user where snum = #{snum} and pw = #{pw} 
   </select>
   
   <update id="keepLogin" >
-  update ams_user set sessionKey = #{sessionId}, sessionLimit = #{next} where snum = #{snum}
+  	update ams_user set sessionKey = #{sessionId}, sessionLimit = #{next} where snum = #{snum}
   </update>
 
-	<select id="checkUserWithSessionKey" resultType="UserVO">
-	select * from ams_user where sessionKey = #{value}  and sessionlimit > now()
-	</select>	
+  <select id="checkUserWithSessionKey" resultType="UserVO">
+  	select * from ams_user where sessionKey = #{value}  and sessionlimit > now()  
+  </select>	
+	
+  <insert id="member">
+  	insert into ams_user (snum, pw, type, name, position, addr, num, upoint) 
+  	values(#{snum}, #{pw}, #{type}, #{name}, #{position}, #{addr}, #{num}, #{upoint})
+  </insert>	
 
 </mapper>
 

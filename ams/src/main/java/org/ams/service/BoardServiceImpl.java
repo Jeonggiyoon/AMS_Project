@@ -19,7 +19,23 @@ public class BoardServiceImpl implements BoardService {
   private BoardDAO dao;
 
   @Override
-  public void regist(BoardVO board) throws Exception {
+  public void regist(BoardVO board) throws Exception {	  
+	  
+	  int result, sum, cin, cout, value =0;
+	  
+	  cin = board.getCin();
+	  cout =board.getCout();
+	  
+	  sum = cin - cout;
+  
+	  result= board.getTotal();
+	  
+	  value = sum + result;
+	  
+	  result = value;
+	  
+	  board.setTotal(result);
+	  	  
     dao.create(board);
   }
 

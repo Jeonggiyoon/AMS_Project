@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.ams.domain.BoardVO;
+import org.ams.domain.UserVO;
 import org.ams.service.BoardService;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -107,5 +108,11 @@ public class BoardController {
     return "redirect:/board/listAll";
   }
 
+  @RequestMapping(value = "/intro", method = RequestMethod.GET)
+  public void introGET(BoardVO board, Model model) throws Exception {
+
+	    logger.info("intro get ...........");    
+  }
+  
 
 }

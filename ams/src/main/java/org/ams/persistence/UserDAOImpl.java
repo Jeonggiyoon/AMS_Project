@@ -8,6 +8,7 @@ import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
+import org.ams.domain.BoardVO;
 import org.ams.domain.UserVO;
 import org.ams.dto.LoginDTO;
 
@@ -42,4 +43,10 @@ public class UserDAOImpl implements UserDAO {
 
     return session.selectOne(namespace +".checkUserWithSessionKey", value);
   }	
+  
+  @Override
+  public void member(UserVO vo) throws Exception {
+    session.insert(namespace + ".member", vo);
+  }
+
 }

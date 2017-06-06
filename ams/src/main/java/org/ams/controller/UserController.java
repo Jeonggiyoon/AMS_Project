@@ -13,14 +13,21 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.util.WebUtils;
+import org.ams.domain.BoardVO;
 import org.ams.domain.UserVO;
 import org.ams.dto.LoginDTO;
 import org.ams.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 @Controller
 @RequestMapping("/user/*")
 public class UserController {
+	
+  private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
 
   @Inject
   private UserService service;
@@ -87,6 +94,29 @@ public class UserController {
         service.keepLogin(vo.getSnum(), session.getId(), new Date());
       }
     }
+  }
+  
+  @RequestMapping(value = "/member", method = RequestMethod.GET)
+  public void memberGET (UserVO user, Model model, RedirectAttributes rttr) throws Exception {
+	    logger.info("member get ...........");
+	    
+	    //service.member(user);
+	    
+	    //rttr.addFlashAttribute("msg", "SUCCESS");
+	    //return "redirect:/board/listAll";
+	    
+	    //return "redirect:/user/login";
+  }
+  
+  @RequestMapping(value = "/member", method = RequestMethod.POST)
+  public String memberPOST(UserVO user, Model model,  RedirectAttributes rttr) throws Exception {
+    
+    logger.info("member post ...........");
+    
+    service.member(user);
+    
+    rttr.addFlashAttribute("msg", "SUCCESS");  
+    return "redirect:/user/login";
   }
 
 }

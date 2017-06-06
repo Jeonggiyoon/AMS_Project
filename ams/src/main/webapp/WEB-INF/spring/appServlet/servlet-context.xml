@@ -42,8 +42,8 @@
    	<interceptor>
 		<mapping path="/board/register"/>
 		<mapping path="/board/listAll"/>
-		<mapping path="/board/modify"/>
-		<mapping path="/board/read"/>
+<!-- 		<mapping path="/board/modify"/>
+		<mapping path="/board/read"/> -->
 		<beans:ref bean="authInterceptor"/>
 	</interceptor>  
 

@@ -280,7 +280,8 @@
                     </div> -->
                     
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">로그아웃</a>
+                      <button type = "submit" class="btn btn-default btn-flat">로그아웃</button>
+<!--                       <a href="#" class="btn btn-default btn-flat">로그아웃</a> -->
                     </div>
                     
                   </li>
@@ -327,7 +328,7 @@
                 <i class="fa fa-dashboard"></i> <span> 탄약 시스템 소개</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/intro/write"><i class="fa fa-circle-o"></i> 시스템 소개 </a></li>
+                <li><a href="/board/intro"><i class="fa fa-circle-o"></i> 시스템 소개 </a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -344,7 +345,7 @@
               </ul>
             </li>
             <li>
-              <a href="../widgets.html">
+              <a href="/">
                 <i class="fa fa-th"></i> <span> 메뉴 추가 가능</span> <small class="label pull-right bg-green"></small>
               </a>
             </li>

@@ -2,8 +2,7 @@ package org.ams.domain;
 
 public class UserVO {
 
-	
-  private String snum;
+private String snum;
   private String pw;
   private String type;
   private String name;
@@ -12,8 +11,7 @@ public class UserVO {
   private String num;
   private int upoint;
 
-
-  public String getSnum() {
+public String getSnum() {
 		return snum;
 	}
 
@@ -106,10 +104,17 @@ public class UserVO {
 	public void setUpoint(int upoint) {
 		this.upoint = upoint;
 	}
+	
+	@Override
+	public String toString() {
+	return "UserVO [snum=" + snum + ", pw=" + pw + ", type=" + type + ", name=" + name + ", position=" + position
+			+ ", addr=" + addr + ", num=" + num + ", upoint=" + upoint + "]";
+	}
 
 
-  @Override
+
+/*  @Override
   public String toString() {
     return "UserVO [snum=" + snum + ", pw=" + pw + ", type=" + type + ", name=" + name + ", position=" + position + ", addr=" + addr + ", num=" + num + ", upoint=" + upoint + "]";
-  }
+  }*/
 }

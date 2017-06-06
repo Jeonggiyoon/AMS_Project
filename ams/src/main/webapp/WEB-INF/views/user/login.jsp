@@ -47,8 +47,15 @@
         </label>
       </div>                        
     </div><!-- /.col -->
+
+
     <div class="col-xs-4">
-      <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+    	<div>
+      		<a href="/user/member" class="btn btn-primary btn-block btn-flat">회원가입</a>
+        </div>
+        <div>
+      		<button type="submit" class="btn btn-primary btn-block btn-flat">로그인</button> 
+      	</div>
     </div><!-- /.col -->
   </div>
 </form>
@@ -75,5 +82,15 @@
         });
       });
     </script>
+  
+    <script>
+    
+    var result = '${msg}';
+    
+    if(result == 'SUCCESS'){
+    	alert("처리가 완료되었습니다.");
+    }
+    
+</script>
   </body>
 </html>

@@ -5,7 +5,6 @@ import java.util.Date;
 
 public class BoardVO {
 
-
 	private Integer bno;
 	private String lot;
 	private int cin;      // carry in
@@ -93,12 +92,19 @@ public class BoardVO {
 	public void setViewcnt(int viewcnt) {
 		this.viewcnt = viewcnt;
 	}
-
+	
 	@Override
+	public String toString() {
+		return "BoardVO [bno=" + bno + ", lot=" + lot + ", cin=" + cin + ", cout=" + cout + ", total=" + total
+				+ ", writer=" + writer + ", regdate=" + regdate + ", viewcnt=" + viewcnt +
+				 "]";
+	}
+
+/*	@Override
 	public String toString() {
 		return "BoardVO [bno=" + bno + ", lot=" + lot + ", cin=" + cin + ", cout=" 
 				+ cout + ", total=" + total + ", writer=" + writer + ", regdate=" 
 				+ regdate + ", viewcnt=" + viewcnt + "]";
 	}
-	
+	*/
 }
