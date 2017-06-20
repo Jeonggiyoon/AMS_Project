@@ -19,28 +19,28 @@
 <table class="table table-bordered">
 	<tr>
 		<th>
-			<label for="exampleInputEmail1">BNO</label> <input type="text"
+			<label for="exampleInputEmail1">순서</label> <input type="text"
 				name='bno' class="form-control" value="${boardVO.bno}"
 				readonly="readonly">
 		</th>
 		<th>
-			<label for="exampleInputEmail1">Lot</label> <input type="text"
+			<label for="exampleInputEmail1">로트넘버</label> <input type="text"
 				name='lot' class="form-control" value="${boardVO.lot}" readonly="readonly">
 		</th>
 		<th>
-			<label for="exampleInputEmail1">Cin	</label> <input type="number"
-				name='cin' MIN ="1" class="form-control" value="${boardVO.cin}">
+			<label for="exampleInputEmail1">반입</label> <input type="number"
+				name='cin' MIN ="0" class="form-control" value="${boardVO.cin}">
 		</th>
 		<th>
-			<label for="exampleInputEmail1">Cout</label> <input type="number"
-				name='cout' MIN ="1" class="form-control" value="${boardVO.cout}">
+			<label for="exampleInputEmail1">반출</label> <input type="number"
+				name='cout' MIN ="0" class="form-control" value="${boardVO.cout}">
 		</th>
 		<th>
-			<label for="exampleInputEmail1">Total</label> <input type="number"
-				name='total' MIN ="1" class="form-control" value="${boardVO.total}" readonly="readonly">
+			<label for="exampleInputEmail1">탄약재고</label> <input type="number"
+				name='total' MIN ="0" class="form-control" value="${boardVO.total}" readonly="readonly">
 		</th>
 		<th>
-			<label for="exampleInputEmail1">Writer</label> <input
+			<label for="exampleInputEmail1">기록자</label> <input
 				type="text" name="writer" class="form-control"
 				value="${boardVO.writer}">
 		</th>
@@ -86,8 +86,8 @@
 
 
 <div class="box-footer">
-	<button type="submit" class="btn btn-primary">SAVE</button>
-	<button type="submit" class="btn btn-warning">CANCEL</button>
+	<button type="submit" class="btn btn-primary">저장</button>
+	<button type="submit" class="btn btn-warning">취소</button>
 </div>
 
 <script>

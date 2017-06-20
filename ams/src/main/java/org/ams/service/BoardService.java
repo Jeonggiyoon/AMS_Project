@@ -20,6 +20,5 @@ public interface BoardService {
 
   public List<BoardVO> listAll() throws Exception;
   
-
   
 }

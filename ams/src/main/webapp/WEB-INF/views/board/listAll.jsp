@@ -21,13 +21,13 @@
 				
 <table class="table table-bordered">
 	<tr>
-		<th style="width: 10px">BNO</th>
-		<th>LOT</th>
-		<th>CIN</th>
-		<th>COUT</th>
-		<th>TOTAL</th>
-		<th>WRITER</th>
-		<th>REGDATE</th>
+		<th style="width: 60px">순서</th>
+		<th>로트넘버</th>
+		<th>반입</th>
+		<th>반출</th>
+		<th>탄약재고</th>
+		<th>기록자</th>
+		<th>기록일자</th>
 		<th style="width: 40px">VIEWCNT</th>
 	</tr>
 

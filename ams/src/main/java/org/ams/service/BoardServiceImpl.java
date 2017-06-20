@@ -24,7 +24,7 @@ public class BoardServiceImpl implements BoardService {
 	  int result, sum, cin, cout, value =0;
 	  
 	  cin = board.getCin();
-	  cout =board.getCout();
+	  cout = board.getCout();
 	  
 	  sum = cin - cout;
   
@@ -51,6 +51,22 @@ public class BoardServiceImpl implements BoardService {
 
   @Override
   public void modify(BoardVO board) throws Exception {
+	  
+	  int result, sum, cin, cout, value =0;
+	  
+	  cin = board.getCin();
+	  cout = board.getCout();
+	  
+	  sum = cin - cout;
+  
+	  result = board.getTotal();
+	  
+	  value = sum + result;
+	  
+	  result = value;
+	  
+	  board.setTotal(result);
+	  
     dao.update(board);
   }
 
@@ -61,9 +77,9 @@ public class BoardServiceImpl implements BoardService {
 
   @Override
   public List<BoardVO> listAll() throws Exception {
+	  
     return dao.listAll();
   }
-
 
 
 }

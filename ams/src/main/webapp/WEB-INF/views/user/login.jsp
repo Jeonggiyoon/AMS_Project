@@ -25,44 +25,46 @@
   <body class="login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a href="/resources/index2.html"><b>AMS</b>Project</a>
+        <a href="/user/login"><b>AMS</b>Project</a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
-        <p class="login-box-msg">Sign in to start your session</p>
+        <p class="login-box-msg">로그인</p>
 
 <form action="/user/loginPost" method="post">
   <div class="form-group has-feedback">
-    <input type="text" name="snum" class="form-control" placeholder="USER ID"/>
+    <input type="text" name="snum" class="form-control" placeholder="사용자 ID"/>
     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
   </div>
   <div class="form-group has-feedback">
-    <input type="password" name="pw" class="form-control" placeholder="Password"/>
+    <input type="password" name="pw" class="form-control" placeholder="비밀번호"/>
     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
   </div>
   <div class="row">
     <div class="col-xs-8">    
       <div class="checkbox icheck">
         <label>
-          <input type="checkbox" name="useCookie"> Remember Me
+          <input type="checkbox" name="useCookie"> 멤버 기억
         </label>
-      </div>                        
+      </div> 
+                      
     </div><!-- /.col -->
-
-
-    <div class="col-xs-4">
-    	<div>
-      		<a href="/user/member" class="btn btn-primary btn-block btn-flat">회원가입</a>
+	 
+	 <div style="float:right;" class="row-xs-4">
+    	<div style="width:80px; float:right; margin-right:20px;">
+      		<a href="/user/member" class="btn btn-primary btn-block btn-flat" >회원가입</a>
         </div>
-        <div>
+        <div style="width:80px; float:right; margin-right:20px;">
       		<button type="submit" class="btn btn-primary btn-block btn-flat">로그인</button> 
       	</div>
-    </div><!-- /.col -->
+	 </div><!-- /.col -->
+	 
   </div>
+  
 </form>
 
 
-        <a href="#">I forgot my password</a><br>
-        <a href="register.html" class="text-center">Register a new membership</a>
+<!--         <a href="#">I forgot my password</a><br>
+        <a href="register.html" class="text-center">Register a new membership</a> -->
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->

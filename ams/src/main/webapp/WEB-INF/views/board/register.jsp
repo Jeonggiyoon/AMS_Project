@@ -27,13 +27,13 @@
 						<br>
 						<table class="table table-bordered">
 							<tr>
-								<th style="width: 10px">BNO</th>
-								<th>LOT</th>
-								<th>CIN</th>
-								<th>COUT</th>
-								<th>TOTAL</th>
-								<th>WRITER</th>
-								<th>REGDATE</th>
+								<th style="width: 60px">순서</th>
+								<th>로트넘버</th>
+								<th>반입</th>
+								<th>반출</th>
+								<th>탄약재고</th>
+								<th>기록자</th>
+								<th>기록일자</th>
 								<th style="width: 40px">VIEWCNT</th>
 							</tr>
 							<c:forEach items="${maxread}" var="max">
@@ -62,7 +62,7 @@
 			<label for="exampleInputEmail1">Lot</label> <input type="text"
 				name='lot' class="form-control" value="${boardVO.lot}" readonly="readonly">
 		</th> --%>
-								<th class="form-group"><label for="exampleInputEmail1">Lot</label>
+								<th class="form-group"><label for="exampleInputEmail1">로트넘버</label>
 									<select class="form-control" name='lot'>
 										<option>40mm</option>
 								</select></th>
@@ -72,21 +72,21 @@
 			<label for="exampleInputEmail1">Lot</label> <input type="text"
 				name='lot' class="form-control" placeholder="Enter lot">
 		</th> -->
-								<th class="form-group"><label for="exampleInputEmail1">Cin</label>
-									<input type="number" name='cin' MIN="0" class="form-control"
-									value="0" placeholder="Enter cin"></th>
-								<th class="form-group"><label for="exampleInputEmail1">Cout</label>
+								<th class="form-group"><label for="exampleInputEmail1">반입</label>
+									<input type="number"  name='cin' MIN="0" class="form-control"
+									 placeholder="반입 입력" required></th>
+								<th class="form-group"><label for="exampleInputEmail1">반출</label>
 									<input type="number" name='cout' MIN="0" class="form-control"
-									value="0" placeholder="Enter cout"></th>
+									 placeholder="반출 입력" required></th>
 
 								<c:forEach items="${maxread}" var="max">
-									<th class="form-group"><label for="exampleInputEmail1">Total</label>
+									<th class="form-group"><label for="exampleInputEmail1">탄약재고</label>
 										<input type="number" name='total' MIN="0" class="form-control"
 										value="${max.total}" readonly="readonly"></th>
 								</c:forEach>
-								<th class="form-group"><label for="exampleInputEmail1">Writer</label>
+								<th class="form-group"><label for="exampleInputEmail1">기록자</label>
 									<input type="text" name="writer" class="form-control"
-									placeholder="Enter Writer"></th>
+									placeholder="기록자 기입"></th>
 
 								<%--  		<th class="form-group">
 			<label for="exampleInputEmail1">Writer</label> 

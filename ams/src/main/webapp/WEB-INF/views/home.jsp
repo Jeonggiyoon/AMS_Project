@@ -20,8 +20,14 @@
       </div><!--/.col (left) -->
       </div>   <!-- /.row -->
     </section><!-- /.content -->
+    <center>
+    <div>
+    	<img src="/resources/dist/img/ammunition.png">
+    </div>
+    </center>
+    <br>
+	<br>
 
-    
   <%@include file="include/footer.jsp" %>
  
  

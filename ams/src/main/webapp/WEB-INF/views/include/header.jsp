@@ -245,28 +245,28 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="/resources/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
-                  <span class="hidden-xs">profile</span>
+                  <img src="/resources/dist/img/Logo.png" class="user-image" alt="User Image"/>
+                  <span class="hidden-xs">개인신상</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                    <img src="/resources/dist/img/Logo.png" class="img-circle" alt="User Image" />
                     <p>
                       AMS - Web Developer
-                      <small>Member since Nov. 2012</small>
+                      <small>Member since June. 2017</small>
                     </p>
                   </li>
                   <!-- Menu Body -->
                   <li class="user-body">
                     <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
+                      <a href="#"></a>
                     </div>
                     <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
+                      <a href="#"></a>
                     </div>
                     <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
+                      <a href="#"></a>
                     </div>
                   </li>
                   <!-- Menu Footer-->
@@ -302,10 +302,10 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+              <img src="/resources/dist/img/Logo.png" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-              <p>gi_yoon Jeonge</p>
+              <p>ams</p>
 
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>

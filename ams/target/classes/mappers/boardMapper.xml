@@ -29,7 +29,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  </select>
 
  <update id="update">
- update ams_board set cin =#{cin}, cout =#{cout}, writer =#{writer}   
+ update ams_board set cin =#{cin}, cout =#{cout}, total = #{total}, writer =#{writer}   
  where bno = #{bno}
  </update>
 

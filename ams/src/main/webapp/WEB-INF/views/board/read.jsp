@@ -25,29 +25,33 @@
 </form>
 <table class="table table-bordered">
 	<tr>
-		<th style="width: 10px">BNO</th>
+		<th><!-- 순서 -->
+		<label for="exampleInputEmail1">순서</label> <input type="text"
+			name='bno' class="form-control" value="${boardVO.bno}"
+			readonly="readonly">
+		</th>
 		<th>
-			<label for="exampleInputEmail1">Lot</label> <input type="text"
+			<label for="exampleInputEmail1">로트넘버</label> <input type="text"
 			name='lot' class="form-control" value="${boardVO.lot}"
 			readonly="readonly">
 		</th>
 		<th>
-			<label for="exampleInputEmail1">Cin</label> <input type="number"
+			<label for="exampleInputEmail1">반입</label> <input type="number"
 			name='cin' class="form-control" value="${boardVO.cin}"
 			readonly="readonly">
 		</th>
 		<th>
-			<label for="exampleInputEmail1">Cout</label> <input type="number"
+			<label for="exampleInputEmail1">반출</label> <input type="number"
 			name='cout' class="form-control" value="${boardVO.cout}"
 			readonly="readonly">
 		</th>
 		<th>
-			<label for="exampleInputEmail1">Total</label> <input type="number"
+			<label for="exampleInputEmail1">탄약재고</label> <input type="number"
 			name='total' class="form-control" value="${boardVO.total}"
 			readonly="readonly">
 		</th>
 		<th>
-			<label for="exampleInputEmail1">Writer</label> <input type="text"
+			<label for="exampleInputEmail1">기록자</label> <input type="text"
 			name="writer" class="form-control" value="${boardVO.writer}"
 			readonly="readonly">
 		</th>
@@ -87,9 +91,9 @@
 <!-- /.box-body -->
 
  <div class="box-footer">
-	<button type="submit" class="btn btn-warning">Modify</button>
-	<button type="submit" class="btn btn-danger">REMOVE</button>
-	<button type="submit" class="btn btn-primary">LIST ALL</button>
+	<button type="submit" style="width: 70px" class="btn btn-warning">수정</button>
+	<button type="submit" style="width: 70px" class="btn btn-danger">삭제</button>
+	<button type="submit" class="btn btn-primary">전체목록</button>
 </div> 
 
 <%--  <ul class="mailbox-attachments clearfix uploadedList">
